@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, TemplateRef } from '@angular/core';
-import { PersistenceService, STORAGE } from '../storage/persistence.service';
+import { PersistenceService, STORAGE } from '../services/persistence.service';
 
 @Component({
   selector: 'app-error-card',
