@@ -3,15 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ErrorCardComponent } from './core/error-card/error-card.component';
+import { ColorDirective } from './color.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorCardComponent
+    ErrorCardComponent,
+    ColorDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

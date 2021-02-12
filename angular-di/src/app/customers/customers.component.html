@@ -1,3 +1,10 @@
-<p>{{ displayName }} works!</p>
+<div class="color-block" appHighlight="yellow">
+    color zone changd
+    <p appColor="blue">{{ displayName }} works!</p> <!-- TODO : Directive not working -->
+</div>
+
 <button (click)="userService.setData('customers')">setData</button>
 {{ userService.getData() }}
+<div> 
+service order injected : {{orderListService.getName()}}
+</div>

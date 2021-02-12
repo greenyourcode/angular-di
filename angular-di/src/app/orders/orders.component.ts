@@ -1,3 +1,4 @@
+import { LoggerService } from './../core/services/logger.service';
 import { Component, OnInit } from '@angular/core';
 import { CustomersService } from '../customers/customers.service';
 import { UserService } from '../user.service';
@@ -12,7 +13,8 @@ export class OrdersComponent implements OnInit {
 
   constructor(
     public userService: UserService,
-    private customerService: CustomersService) { }
+    private customerService: CustomersService,
+    public loggerService: LoggerService) { }
 
   ngOnInit(): void {
     this.displayName = this.customerService.displayName();

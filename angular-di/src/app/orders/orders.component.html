@@ -1,3 +1,8 @@
 <p>{{ displayName }} works!</p>
 <button (click)="userService.setData('orders')">setData</button>
 {{ userService.getData() }}
+loggername in orders: {{ loggerService.name }}
+
+<app-order-list>
+    <app-order-list-item></app-order-list-item>
+</app-order-list>

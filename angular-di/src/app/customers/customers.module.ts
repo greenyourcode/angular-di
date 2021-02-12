@@ -1,3 +1,4 @@
+import { HighlightDirective } from './highlight.directive';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -6,10 +7,10 @@ import { CustomersComponent } from './customers.component';
 
 
 @NgModule({
-  declarations: [CustomersComponent],
+  declarations: [CustomersComponent, HighlightDirective],
   imports: [
     CommonModule,
-    CustomersRoutingModule
+    CustomersRoutingModule,
   ]
 })
 export class CustomersModule { }
